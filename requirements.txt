@@ -1,0 +1,28 @@
+# Multi-Agent System Requirements
+# Core dependencies
+streamlit>=1.28.0
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+arxiv>=2.1.0
+PyPDF2>=3.0.0
+pdfplumber>=0.10.0
+pydantic>=2.0.0
+python-dotenv>=1.0.0
+
+# Multi-agent orchestration (optional - has fallback)
+langgraph>=0.0.40
+langchain>=0.1.0
+langchain-community>=0.0.20
+
+# LLM backends (optional - will use available backend)
+openai>=1.0.0  # For OpenAI API
+ollama>=0.1.0  # For local Ollama
+transformers>=4.30.0  # For HuggingFace models
+torch>=2.0.0  # For GPU acceleration (optional)
+accelerate>=0.20.0  # For model loading
+
+# MCP protocol (optional)
+mcp>=0.1.0
+
+# Optional UI
+gradio>=4.0.0

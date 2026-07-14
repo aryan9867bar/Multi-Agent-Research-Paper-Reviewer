@@ -1,0 +1,90 @@
+{
+  "test_cases": [
+    {
+      "id": "test_001",
+      "name": "Arxiv Paper Review - Transformer Paper",
+      "input": {
+        "type": "arxiv_id",
+        "value": "1706.03762"
+      },
+      "expected_output": {
+        "has_summary": true,
+        "has_review": true,
+        "has_validation": true,
+        "min_summary_length": 200
+      },
+      "description": "Test review of the famous 'Attention is All You Need' paper"
+    },
+    {
+      "id": "test_002",
+      "name": "Arxiv Paper Search and Review",
+      "input": {
+        "type": "search",
+        "query": "machine learning",
+        "max_results": 1
+      },
+      "expected_output": {
+        "has_results": true,
+        "can_review": true
+      },
+      "description": "Test searching for papers and reviewing the first result"
+    },
+    {
+      "id": "test_003",
+      "name": "Invalid Arxiv ID",
+      "input": {
+        "type": "arxiv_id",
+        "value": "invalid_id_12345"
+      },
+      "expected_output": {
+        "handles_error": true,
+        "error_message": true
+      },
+      "description": "Test error handling for invalid paper ID"
+    },
+    {
+      "id": "test_004",
+      "name": "Review Quality Check",
+      "input": {
+        "type": "arxiv_id",
+        "value": "1706.03762"
+      },
+      "expected_output": {
+        "validation_passed": true,
+        "has_critique": true,
+        "critique_length": 100
+      },
+      "description": "Test that critic agent validates review quality"
+    },
+    {
+      "id": "test_005",
+      "name": "Multiple Agent Coordination",
+      "input": {
+        "type": "arxiv_id",
+        "value": "1706.03762"
+      },
+      "expected_output": {
+        "reader_success": true,
+        "reviewer_success": true,
+        "critic_success": true,
+        "all_agents_ran": true
+      },
+      "description": "Test that all agents execute in sequence successfully"
+    },
+    {
+      "id": "test_006",
+      "name": "Structured Information Extraction",
+      "input": {
+        "type": "arxiv_id",
+        "value": "1706.03762"
+      },
+      "expected_output": {
+        "has_structured_info": true,
+        "has_key_contributions": true,
+        "has_methodology": true
+      },
+      "description": "Test that reader extracts structured information"
+    }
+  ]
+}
+
