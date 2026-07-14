@@ -6,6 +6,8 @@ A multi-agent system that assists in reviewing academic papers and summarizes th
 
 ## Architecture
 
+![Architecture Diagram](Architecture_Diagram.png)
+
 ### Agents
 
 1. **Reader Agent**: Reads and extracts content from research papers
@@ -74,7 +76,7 @@ part2_multi_agent/
 ### 1. Install Dependencies
 
 ```bash
-cd part2_multi_agent
+cd Multi-Agent-Research-Paper-Reviewer
 pip install -r requirements.txt
 ```
 
