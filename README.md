@@ -6,7 +6,7 @@ A multi-agent system that assists in reviewing academic papers and summarizes th
 
 ## Architecture
 
-![Architecture Diagram](Architecture_Diagram.png)
+![Architecture Diagram](/architecture/Architecture_Diagram.png)
 
 ### Agents
 
