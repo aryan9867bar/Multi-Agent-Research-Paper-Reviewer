@@ -68,7 +68,6 @@ part2_multi_agent/
 │   └── reviews/                 # Generated reviews
 ├── requirements.txt
 ├── README.md
-└── ARCH.md
 ```
 
 ## Quick Start
