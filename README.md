@@ -1,4 +1,4 @@
-# Part 2: Multi-Agent Research Paper Reviewer
+# Multi-Agent Research Paper Reviewer
 
 ## Overview
 
